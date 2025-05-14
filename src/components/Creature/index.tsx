@@ -16,7 +16,7 @@ const CreatureEffect: React.FC = () => {
     const grid = [rows, rows];
     const from = "center";
     const scaleStagger = stagger([2, 5], { ease: "inQuad", grid, from });
-    const opacityStagger = stagger([1, 0.1], {ease: "inQuad", grid, from });
+    const opacityStagger = stagger([1, 0.1], { ease: "inQuad", grid, from });
     const creatureEl = creatureRef.current;
 
     if (!creatureEl) return;
@@ -48,11 +48,11 @@ const CreatureEffect: React.FC = () => {
       y: 0,
       scale: scaleStagger,
       opacity: opacityStagger,
-      background: stagger([80, 20], {
-        grid,
-        from,
-        modifier: (v) => `hsl(4, 70%, ${v}%)`,
-      }),
+      // background: stagger([80, 20], {
+      //   grid,
+      //   from,
+      // modifier: (v) => `hsl(4, 70%, ${v}%)`,
+      // }),
       boxShadow: stagger([8, 1], {
         grid,
         from,
@@ -86,7 +86,7 @@ const CreatureEffect: React.FC = () => {
     };
 
     const mainLoop = createTimer({
-      frameRate: 15, // Animate to the new cursor position every 250ms
+      // frameRate: 120, // Animate to the new cursor position every 250ms
       onUpdate: () => {
         animate(particuleEls, {
           x: cursor.x,
