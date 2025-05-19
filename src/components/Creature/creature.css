@@ -39,5 +39,5 @@
   mix-blend-mode: plus-lighter;
   /*mix-blend-mode: screen;*/
   /*mix-blend-mode: lighten;*/
-  background: var(--color-creature-bg-color);
+  /* background: var(--color-creature-bg-color); */
 }

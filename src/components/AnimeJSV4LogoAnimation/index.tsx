@@ -3,10 +3,12 @@ import SvgComponent from "./SvgComponent";
 import { useEffect } from "react";
 
 export default function AnimeJSV4LogoAnimation() {
+  const [$dot1] = utils.$("#dot-1");
+
   useEffect(() => {
-    const [$dot1] = utils.$("#dot-1");
     const onions: Node[] = [];
     if (!$dot1 || !$dot1.parentNode) return;
+    console.log("🚀 ~ useEffect ~ $dot1.parentNode: ", $dot1.parentNode);
 
     for (let i = 0; i < 4; i++) {
       const $clone = $dot1.cloneNode() as Node & { id: string };
@@ -350,7 +352,7 @@ export default function AnimeJSV4LogoAnimation() {
         "<<"
       )
       .init();
-  }, []);
+  }, [$dot1]);
 
   return (
     <div id="animejs-v4-logo">

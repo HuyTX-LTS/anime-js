@@ -48,11 +48,14 @@ const CreatureEffect: React.FC = () => {
       y: 0,
       scale: scaleStagger,
       opacity: opacityStagger,
-      // background: stagger([80, 20], {
-      //   grid,
-      //   from,
-      // modifier: (v) => `hsl(4, 70%, ${v}%)`,
-      // }),
+      background: stagger([80, 20], {
+        grid,
+        from,
+        modifier: () => {
+          // return `hsla(var(--color-creature-bg-h), var(--color-creature-bg-s), ${v}%, 1)`;
+          return `var(--color-creature-bg-color)`;
+        },
+      }),
       boxShadow: stagger([8, 1], {
         grid,
         from,

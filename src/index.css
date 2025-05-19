@@ -6,7 +6,36 @@
 @theme {
   --color-bgContrast: #FFFFFF;
   --color-textColor: #242424;
+
   --color-creature-bg-color: #242424;
+  --color-bg-nav: #fbfbfb;
+  --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  /* 
+    1. Hue (4)
+    Color angle, unit: degrees (0–360).
+    0 or 360 is red, 120 is green, 240 is blue.
+    → 4 is almost like dark red.
+  */
+  --color-creature-bg-h: 4;
+  /* 
+    Saturation (70%)
+    Color saturation level:
+    0%: gray (no color).
+    100%: brightest color.
+    → 70%: quite bright red.
+  */
+  --color-creature-bg-s: 70%;
+  /* 
+    Lightness:
+    0%: black.
+    100%: white.
+  */
+  --color-creature-bg-l: 30%;
+
+  --color-toggle-switch: #0ea5e9;
 }
 
 @layer theme {
@@ -14,6 +43,14 @@
     --color-bgContrast: #242424;
     --color-textColor: #FFFFFF;
     --color-creature-bg-color: red;
+
+    --color-creature-bg-h: 324;
+    --color-creature-bg-s: 100%;
+    --color-creature-bg-l: 30%;
+
+    --color-bg-nav: #222222;
+
+    --color-toggle-switch: #0ea5e9;
   }
 
   a:hover {
