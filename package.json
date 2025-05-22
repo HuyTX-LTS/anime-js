@@ -1,9 +1,9 @@
 {
-  "name": "anime-js-tutorial",
+  "name": "anime-js",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "homepage": "https://HuyTX-LTS.github.io/your-repo-name",
+  "homepage": "https://huytx-lts.github.io/anime-js",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
