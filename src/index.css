@@ -36,6 +36,10 @@
   --color-creature-bg-l: 30%;
 
   --color-toggle-switch: #0ea5e9;
+  --color-gradient-link-nav-l: #0ea5e9;
+  --color-gradient-link-nav-r: #fda5d5;
+  --color-gradient-logo-nav-l: #f6339a;
+
 }
 
 @layer theme {
@@ -51,6 +55,10 @@
     --color-bg-nav: #222222;
 
     --color-toggle-switch: #0ea5e9;
+
+    --color-gradient-link-nav-l: #f6339a;
+    --color-gradient-link-nav-r: #fda5d5;
+    --color-gradient-logo-nav-l: #f6339a;
   }
 
   a:hover {
